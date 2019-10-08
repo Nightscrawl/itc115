@@ -1,5 +1,6 @@
 // Assn3_PowersOfN
 // Assignment 3 - Powers of N
+// Uses a method to show show sequential values for a given base and exponent
 // Kira Abell
 // ITC 115
 
