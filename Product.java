@@ -11,13 +11,15 @@ import java.text.NumberFormat;
 public class Product {
 	
 	private String pDescription;
+	private int pStock;
 	private int pCode;	
 	private double pPrice;  // in dollars
 	public static int pCount;
 	
 	// creates a product with the given parameters
-	public Product(String pDescription, int pCode, double pPrice) {
+	public Product(String pDescription, int pStock, int pCode, double pPrice) {
 		this.pDescription = pDescription;
+		this.pStock = pStock;
 		this.pCode = pCode;
 		this.pPrice = pPrice;
 		
@@ -26,14 +28,15 @@ public class Product {
 	
 	// creates a product placeholder with no data
 	public Product() {
-		this("N/A", 0, 0.00);
+		this("N/A", 0, 0, 0.00);
 	}
 		
 	public String toString() {
-		return "Product description: " + pDescription + "\n" + "Code: " + pCode + "\n" + "Price: " + getPriceFormatted();
+		return "Product description: " + pDescription + "\n" + "Number in stock: " + pStock + "\n" + "Code: " + pCode + "\n" + "Price: " + getPriceFormatted();
 	}	
 		/* Example:
 		 * Product description: The BEST Gizmo!
+		 * Number in stock: 55
 		 * Code: 1
 		 * Price: $999.99
 		 */
@@ -45,6 +48,14 @@ public class Product {
 
 	public void setpDescription(String pDescription) {
 		this.pDescription = pDescription;
+	}
+	
+	public int getpStock() {
+		return pStock;
+	}
+
+	public void setpStock(int pStock) {
+		this.pStock = pStock;
 	}
 
 	public int getpCode() {
