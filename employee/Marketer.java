@@ -1,5 +1,5 @@
 /* Marketer.java
- * Assignment 11 - Ch 9, Ex 1, Harvard Lawyer
+ * Assignment 11 - Ch 9, Ex 1, Marketer
  * Extends the employee class for a marketer
  * Kira Abell
  * 12/4/2019
